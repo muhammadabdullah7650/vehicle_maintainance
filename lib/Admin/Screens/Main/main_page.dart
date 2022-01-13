@@ -39,8 +39,8 @@ class _main_pageState extends State<main_page> {
                 label: 'Home',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.receipt_outlined),
-                label: 'Manage Record',
+                icon: Icon(Icons.add_box_outlined),
+                label: 'Record',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person),
