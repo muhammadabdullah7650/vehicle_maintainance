@@ -14,15 +14,22 @@ class _manage_recordState extends State<manage_record> {
       body: Column(
         children: [
           Container(
-            height: 90,
+            height: 300,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(60.0),
-                  bottomLeft: Radius.circular(60.0)),
-              color: Colors.indigo,
+                  bottomRight: Radius.circular(90.0),
+                  bottomLeft: Radius.circular(90.0)),
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.blue,
+                  Colors.indigo,
+                ],
+              ),
             ),
+            child: Image.asset("images/main2.png"),
           ),
-          Image.asset("name"),
           SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.only(left: 50,right: 50),
@@ -33,8 +40,8 @@ class _manage_recordState extends State<manage_record> {
                   child: Container(
                     padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                     // color: Colors.red,
-                    height: 120,
-                    width: 100,
+                    height: 140,
+                    width: 120,
                     decoration:  BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [
@@ -50,7 +57,7 @@ class _manage_recordState extends State<manage_record> {
                     child:  Column(
                       children: [
                         SizedBox(height: 20,),
-                        Icon(Icons.add_box_outlined,size: 40,color: Colors.indigo,),
+                        Icon(Icons.add_box_outlined,size: 50,color: Colors.indigo,),
                         SizedBox(height: 20,),
                         //Image.asset("images/wash.png",height: 80,width: 80,),
                         Text('Add Record',textAlign: TextAlign.center,
@@ -69,8 +76,8 @@ class _manage_recordState extends State<manage_record> {
                   child: Container(
                     padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                     // color: Colors.red,
-                    height: 120,
-                    width: 100,
+                    height: 140,
+                    width: 120,
                     decoration:  BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: [
@@ -86,7 +93,7 @@ class _manage_recordState extends State<manage_record> {
                     child:  Column(
                       children: [
                         SizedBox(height: 20,),
-                        Icon(Icons.remove_red_eye,size: 40,color: Colors.indigo,),
+                        Icon(Icons.remove_red_eye,size: 50,color: Colors.indigo,),
                         SizedBox(height: 20,),
                         //Image.asset("images/wash.png",height: 80,width: 80,),
                         Text('View Record',textAlign: TextAlign.center,
@@ -102,7 +109,7 @@ class _manage_recordState extends State<manage_record> {
               ],
             ),
           ),
-          Divider(thickness: 2,color: Colors.indigo,),
+          //Divider(thickness: 1,color: Colors.indigo,),
         ],
       ),
     );

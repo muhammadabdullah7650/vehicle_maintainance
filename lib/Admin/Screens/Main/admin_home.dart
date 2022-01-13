@@ -32,7 +32,14 @@ class _admin_homeState extends State<admin_home> {
                           bottomLeft: Radius.circular(40.0),
                           bottomRight: Radius.circular(40.0)
                       ),
-                      color: Colors.blue,
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.blue,
+                          Colors.indigo,
+                        ],
+                      ),
                     ),
                     child:Column(
                       children: [
@@ -164,7 +171,14 @@ class _admin_homeState extends State<admin_home> {
                           bottomLeft: Radius.circular(40.0),
                           bottomRight: Radius.circular(40.0)
                       ),
-                      color: Colors.blue,
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.blue,
+                          Colors.indigo,
+                        ],
+                      ),
                     ),
                     child:Column(
                       children: [
