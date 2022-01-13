@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class manage_record extends StatefulWidget {
   const manage_record({Key? key}) : super(key: key);
@@ -21,6 +22,7 @@ class _manage_recordState extends State<manage_record> {
               color: Colors.indigo,
             ),
           ),
+          Image.asset("name"),
           SizedBox(height: 20,),
           Container(
             padding: EdgeInsets.only(left: 50,right: 50),
@@ -100,6 +102,7 @@ class _manage_recordState extends State<manage_record> {
               ],
             ),
           ),
+          Divider(thickness: 2,color: Colors.indigo,),
         ],
       ),
     );
