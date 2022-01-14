@@ -19,7 +19,7 @@ class _admin_profileState extends State<admin_profile> {
            Container(
              padding: EdgeInsets.all(20),
              child:  CircleAvatar(
-                 radius: 50,
+                 radius: 30,
                  backgroundColor: Colors.black12,
                  child: ClipRRect(
                    borderRadius:BorderRadius.circular(50),
@@ -29,13 +29,13 @@ class _admin_profileState extends State<admin_profile> {
            ),
             Column(
               children: [
-                Text("Admin Name",style: GoogleFonts.merriweather(fontWeight: FontWeight.bold,fontSize: 16),),
+                Text("Admin Name",style: GoogleFonts.merriweather(fontWeight: FontWeight.bold,fontSize: 14),),
               ],
             ),
           ],
         ),
         Divider(thickness: 2,),
-        
+
       ],
     );
   }
