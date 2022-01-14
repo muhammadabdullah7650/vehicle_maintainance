@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'admin_home.dart';
+import 'admin_profile.dart';
 import 'manage_records.dart';
 class main_page extends StatefulWidget {
   const main_page({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _main_pageState extends State<main_page> {
   final tabs=[
     admin_home(),
     manage_record(),
-    Center(child: Text("Profile"),)
+    admin_profile(),
   ];
   @override
   Widget build(BuildContext context) {
