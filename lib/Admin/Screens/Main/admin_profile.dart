@@ -29,12 +29,82 @@ class _admin_profileState extends State<admin_profile> {
            ),
             Column(
               children: [
-                Text("Admin Name",style: GoogleFonts.merriweather(fontWeight: FontWeight.bold,fontSize: 14),),
+                SizedBox(height: 30,),
+                Text("Admin Name",style: GoogleFonts.merriweather(fontWeight: FontWeight.bold,fontSize: 18),),
+                FlatButton(
+                  onPressed: () => {},
+                  child: Row(
+                    children: <Widget>[
+                      Text("View Profile"),
+                      Icon(Icons.navigate_next),
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
         ),
         Divider(thickness: 2,),
+        SizedBox(height: 20,),
+        Container(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            children: [
+              FlatButton(
+                onPressed: () => {},
+                child:Row(
+                  children: [
+                    Icon(Icons.receipt_outlined),
+                    SizedBox(width: 20,),
+                    Text("Records"),
+                    Spacer(),
+                    Icon(Icons.navigate_next)
+                  ],
+                )
+              ),
+              Divider(thickness: 1,),
+              FlatButton(
+                  onPressed: () => {},
+                  child:Row(
+                    children: [
+                      Icon(Icons.receipt_outlined),
+                      SizedBox(width: 20,),
+                      Text("Records"),
+                      Spacer(),
+                      Icon(Icons.navigate_next)
+                    ],
+                  )
+              ),
+              Divider(thickness: 1,),
+              FlatButton(
+                  onPressed: () => {},
+                  child:Row(
+                    children: [
+                      Icon(Icons.receipt_outlined),
+                      SizedBox(width: 20,),
+                      Text("Records"),
+                      Spacer(),
+                      Icon(Icons.navigate_next)
+                    ],
+                  )
+              ),
+              Divider(thickness: 1,),
+              FlatButton(
+                  onPressed: () => {},
+                  child:Row(
+                    children: [
+                      Icon(Icons.receipt_outlined),
+                      SizedBox(width: 20,),
+                      Text("Records"),
+                      Spacer(),
+                      Icon(Icons.navigate_next)
+                    ],
+                  )
+              ),
+              Divider(thickness: 1,),
+            ],
+          ),
+        )
 
       ],
     );
