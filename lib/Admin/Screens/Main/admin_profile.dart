@@ -45,9 +45,9 @@ class _admin_profileState extends State<admin_profile> {
           ],
         ),
         Divider(thickness: 2,),
-        SizedBox(height: 20,),
+        SizedBox(height: 10,),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(15),
           child: Column(
             children: [
               FlatButton(
@@ -67,9 +67,9 @@ class _admin_profileState extends State<admin_profile> {
                   onPressed: () => {},
                   child:Row(
                     children: [
-                      Icon(Icons.receipt_outlined),
+                      Icon(Icons.settings),
                       SizedBox(width: 20,),
-                      Text("Records"),
+                      Text("Setting"),
                       Spacer(),
                       Icon(Icons.navigate_next)
                     ],
@@ -80,9 +80,9 @@ class _admin_profileState extends State<admin_profile> {
                   onPressed: () => {},
                   child:Row(
                     children: [
-                      Icon(Icons.receipt_outlined),
+                      Icon(Icons.account_box_outlined),
                       SizedBox(width: 20,),
-                      Text("Records"),
+                      Text("About us"),
                       Spacer(),
                       Icon(Icons.navigate_next)
                     ],
@@ -93,9 +93,22 @@ class _admin_profileState extends State<admin_profile> {
                   onPressed: () => {},
                   child:Row(
                     children: [
-                      Icon(Icons.receipt_outlined),
+                      Icon(Icons.contact_page_outlined),
                       SizedBox(width: 20,),
-                      Text("Records"),
+                      Text("Contact Us"),
+                      Spacer(),
+                      Icon(Icons.navigate_next)
+                    ],
+                  )
+              ),
+              Divider(thickness: 1,),
+              FlatButton(
+                  onPressed: () => {},
+                  child:Row(
+                    children: [
+                      Icon(Icons.logout),
+                      SizedBox(width: 20,),
+                      Text("Logout"),
                       Spacer(),
                       Icon(Icons.navigate_next)
                     ],
