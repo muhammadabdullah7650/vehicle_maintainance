@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vehicle_maintainance/Admin/Screens/login/login.dart';
 class admin_profile extends StatefulWidget {
   const admin_profile({Key? key}) : super(key: key);
 
@@ -103,7 +104,9 @@ class _admin_profileState extends State<admin_profile> {
               ),
               Divider(thickness: 1,),
               FlatButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginScreen(),))
+                  },
                   child:Row(
                     children: [
                       Icon(Icons.logout),
