@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:vehicle_maintainance/Screens/bike_detail.dart';
 
 import 'bike_category.dart';
+import 'detail_screen.dart';
 class bike extends StatefulWidget {
   const bike({Key? key}) : super(key: key);
 
@@ -528,7 +529,7 @@ class _bikeState extends State<bike> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -571,7 +572,7 @@ class _bikeState extends State<bike> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -614,7 +615,7 @@ class _bikeState extends State<bike> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -657,7 +658,7 @@ class _bikeState extends State<bike> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],

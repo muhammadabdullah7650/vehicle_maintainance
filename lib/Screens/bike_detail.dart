@@ -101,7 +101,7 @@ class _bike_detailState extends State<bike_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -144,7 +144,7 @@ class _bike_detailState extends State<bike_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -187,7 +187,7 @@ class _bike_detailState extends State<bike_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],

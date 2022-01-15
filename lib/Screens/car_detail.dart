@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'detail_screen.dart';
 class car_detail extends StatefulWidget {
   const car_detail({Key? key}) : super(key: key);
 
@@ -57,7 +59,7 @@ class _car_detailState extends State<car_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -100,7 +102,7 @@ class _car_detailState extends State<car_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -143,7 +145,7 @@ class _car_detailState extends State<car_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
@@ -186,7 +188,7 @@ class _car_detailState extends State<car_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
