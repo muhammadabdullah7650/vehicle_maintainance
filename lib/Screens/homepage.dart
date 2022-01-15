@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vehicle_maintainance/Admin/Screens/login/login.dart';
+import 'package:vehicle_maintainance/Screens/profile.dart';
 
 import 'home.dart';
 
@@ -12,7 +14,7 @@ class _main_pageState extends State<main_page> {
   final tabs=[
     home(),
     Center(child: Text("Search"),),
-    Center(child: Text("Profile"),)
+    profile(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,8 +43,8 @@ class _main_pageState extends State<main_page> {
                 label: 'Search',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                label: 'Profile',
+                icon: Icon(Icons.admin_panel_settings_outlined),
+                label: 'Admin',
               ),
             ],
             onTap: (index){

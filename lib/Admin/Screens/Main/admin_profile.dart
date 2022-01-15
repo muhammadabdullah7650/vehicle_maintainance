@@ -94,7 +94,7 @@ class _admin_profileState extends State<admin_profile> {
                   onPressed: () => {},
                   child:Row(
                     children: [
-                      Icon(Icons.contact_page_outlined),
+                      Icon(Icons.call),
                       SizedBox(width: 20,),
                       Text("Contact Us"),
                       Spacer(),
