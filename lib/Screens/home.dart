@@ -72,11 +72,7 @@ class _homeState extends State<home> {
                     width: 150,
                     decoration:  BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(
-                          color: Colors.yellow,
-                          width: 2,
-                        ),
-                        color: Colors.yellow[100]
+                        color: Colors.black12
                     ),
                     child:  Column(
                       children: [
@@ -104,11 +100,7 @@ class _homeState extends State<home> {
                   width: 150,
                   decoration:  BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      border: Border.all(
-                        color: Colors.teal,
-                        width: 1,
-                      ),
-                      color: Colors.teal[100]
+                      color: Colors.black12
                   ),
                   child:  Column(
                     children: [
@@ -132,11 +124,11 @@ class _homeState extends State<home> {
         SizedBox(height: 10,),
         Container(
           padding: EdgeInsets.symmetric(vertical: 5),
-          color:Color(0xFF37474F),
+          color:Colors.black12,
           height: 40,
           //color: Colors.amber[100],
           child: Text("Recommended",textAlign: TextAlign.center,style:
-          GoogleFonts.merriweather(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+          GoogleFonts.merriweather(color: Colors.grey, fontSize: 20, fontWeight: FontWeight.bold),
 
           ),
         ),

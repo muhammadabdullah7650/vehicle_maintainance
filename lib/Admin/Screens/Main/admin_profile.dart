@@ -1,3 +1,4 @@
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -78,7 +79,13 @@ class _admin_profileState extends State<admin_profile> {
               ),
               Divider(thickness: 1,),
               FlatButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                  CoolAlert.show(
+                  context: context,
+                  type: CoolAlertType.info,
+                  text: 'Alpha Developers \n V 0.1.1 \nCopyRight \'MultiLearner\'',
+                  )
+                  },
                   child:Row(
                     children: [
                       Icon(Icons.account_box_outlined),
@@ -91,7 +98,13 @@ class _admin_profileState extends State<admin_profile> {
               ),
               Divider(thickness: 1,),
               FlatButton(
-                  onPressed: () => {},
+                  onPressed: () => {
+                  CoolAlert.show(
+                  context: context,
+                  type: CoolAlertType.info,
+                  text: 'Contact us at \n +92-3062834710 \n \'chabdullah7650@gmail.com\'',
+                  )
+                  },
                   child:Row(
                     children: [
                       Icon(Icons.call),
