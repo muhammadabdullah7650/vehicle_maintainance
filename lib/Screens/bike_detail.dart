@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vehicle_maintainance/Screens/detail_screen.dart';
 class bike_detail extends StatefulWidget {
   const bike_detail({Key? key}) : super(key: key);
 
@@ -57,7 +58,7 @@ class _bike_detailState extends State<bike_detail> {
                   icon: const Icon(Icons.remove_red_eye,size: 30,),
                   color: Colors.amber,
                   onPressed: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> detail_screen(),));
                   },
                 ),
               ],
