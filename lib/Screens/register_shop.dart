@@ -6,7 +6,7 @@ class register_shop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        
+
       ),
     );
   }
