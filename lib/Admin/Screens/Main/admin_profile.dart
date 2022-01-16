@@ -69,6 +69,19 @@ class _admin_profileState extends State<admin_profile> {
                   onPressed: () => {},
                   child:Row(
                     children: [
+                      Icon(Icons.notifications_active_outlined),
+                      SizedBox(width: 20,),
+                      Text("Requests"),
+                      Spacer(),
+                      Icon(Icons.navigate_next)
+                    ],
+                  )
+              ),
+              Divider(thickness: 1,),
+              FlatButton(
+                  onPressed: () => {},
+                  child:Row(
+                    children: [
                       Icon(Icons.settings),
                       SizedBox(width: 20,),
                       Text("Setting"),

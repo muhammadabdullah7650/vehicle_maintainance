@@ -15,7 +15,7 @@ class _admin_homeState extends State<admin_home> {
     return ListView(
       physics: ClampingScrollPhysics(),
       shrinkWrap: true,
-      padding: const EdgeInsets.all(45),
+      padding: const EdgeInsets.all(30),
       children: [
         SingleChildScrollView(
             scrollDirection: Axis.horizontal,

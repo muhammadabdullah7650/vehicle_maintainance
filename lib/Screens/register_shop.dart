@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
@@ -97,7 +99,7 @@ class register_shop extends StatelessWidget {
                     icon: Icon(Icons.mail),color: Colors.green,iconSize: 25, ),
                 ],
               ),
-
+              SizedBox(height: 20,),
             ],
           ),
         )
