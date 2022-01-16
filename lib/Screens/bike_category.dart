@@ -33,7 +33,6 @@ class bike_category extends StatelessWidget {
                   ),
                 ]
             ),
-            child: Expanded(
               child: Row(
                 children: [
                   SizedBox(width: 10,),
@@ -52,7 +51,6 @@ class bike_category extends StatelessWidget {
                 ],
               ),
             ),
-          ),
           SizedBox(height: 15,),
           Container(
              margin: EdgeInsets.only(left: 5,right: 5),

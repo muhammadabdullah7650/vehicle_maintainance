@@ -22,7 +22,18 @@ class _detail_screenState extends State<detail_screen> {
         children: [
           Image.asset("images/map.jpeg"),
           Container(
-            color: Colors.indigo,
+            decoration: BoxDecoration(
+               // borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 7,
+                    blurRadius: 9,
+                    offset: Offset(0, 3), // changes position of shadow
+                  ),
+                ]
+            ),
             padding: EdgeInsets.all(5),
             child: Column(
               children: [

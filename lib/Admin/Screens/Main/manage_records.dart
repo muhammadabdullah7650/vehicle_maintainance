@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:vehicle_maintainance/Admin/Screens/Main/view_record.dart';
+
+import 'add_record.dart';
 class manage_record extends StatefulWidget {
   const manage_record({Key? key}) : super(key: key);
 
@@ -37,6 +39,7 @@ class _manage_recordState extends State<manage_record> {
             child: Row(
               children: [
                 TextButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (c)=>add_record()));
                 },
                   child: Container(
                     padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
