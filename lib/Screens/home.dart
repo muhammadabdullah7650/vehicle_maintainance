@@ -135,8 +135,6 @@ class _homeState extends State<home> {
         SizedBox(height: 10,),
         Container(
           padding: EdgeInsets.all(5),
-          // height: 200,
-          // color: Colors.amber[500],
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -173,7 +171,7 @@ class _homeState extends State<home> {
 
                   ),
                 ),),
-              SizedBox(width: 5,),
+              SizedBox(width: 3,),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> car(),));
               },
@@ -209,7 +207,7 @@ class _homeState extends State<home> {
 
                   ),
                 ),),
-              SizedBox(width: 5,),
+              SizedBox(width: 3,),
               TextButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> car(),));
               },

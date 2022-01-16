@@ -20,239 +20,232 @@ class _carState extends State<car> {
         leading: Image.asset("images/splash.png"),
       ),
       body: ListView(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(20),
         children: [
           Container(
             padding: EdgeInsets.fromLTRB(10, 10,0, 5),
             child: Text("Catagories",style: TextStyle(fontSize:25,fontWeight: FontWeight.bold),),
           ),
-          Container(
-            padding: EdgeInsets.all(2),
-            height: 180,
-            child: Row(
-              children: [
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 15, 5, 10),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        Image.asset("images/toyota.png",width: 70,),
-                        SizedBox(height: 20,),
-                        Text('HONDA',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+          Row(
+            children: [
+              //SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 15, 5, 10),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      Image.asset("images/toyota.png",width: 70,),
+                      SizedBox(height: 20,),
+                      Text('HONDA',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        SizedBox(height: 5,),
-                        Image.asset("images/suzuki.png",width: 60,),
-                        SizedBox(height: 15,),
-                        Text('SUZUKI',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+                  ),
+                ),),
+             // SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      SizedBox(height: 5,),
+                      Image.asset("images/suzuki.png",width: 60,),
+                      SizedBox(height: 15,),
+                      Text('SUZUKI',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        Image.asset("images/mercedes.png",width: 60,),
-                        SizedBox(height: 15,),
-                        Text('MERCEDES',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+                  ),
+                ),),
+              //SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      Image.asset("images/mercedes.png",width: 60,),
+                      SizedBox(height: 15,),
+                      Text('MERCEDES',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-              ],
-            ),
+                  ),
+                ),),
+            ],
           ),
-          Container(
-            height: 140,
-            child: Row(
-              children: [
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        Image.asset("images/honda_car.png",width: 80,),
-                        // SizedBox(height: 10,),
-                        Text('HONDA',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+          Row(
+            children: [
+              //SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      Image.asset("images/honda_car.png",width: 80,),
+                      // SizedBox(height: 10,),
+                      Text('HONDA',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        SizedBox(height: 2,),
-                        Image.asset("images/bmw.png",width: 65,),
-                        SizedBox(height: 15,),
-                        Text('BMW',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+                  ),
+                ),),
+              //SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      SizedBox(height: 2,),
+                      Image.asset("images/bmw.png",width: 65,),
+                      SizedBox(height: 15,),
+                      Text('BMW',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-                SizedBox(width: 3,),
-                TextButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
-                },
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
-                    // color: Colors.red,
-                    height: 125,
-                    width: 110,
-                    decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white
-                    ),
-                    child:  Column(
-                      children: [
-                        SizedBox(height: 3,),
-                        Image.asset("images/audi.png",height: 60,width: 80,),
-                        SizedBox(height: 15,),
-                        Text('AUDI',textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 16,
-                          ),),
-                        SizedBox(height: 7,),
+                  ),
+                ),),
+              //SizedBox(width: 3,),
+              TextButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> car_category(),));
+              },
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                  // color: Colors.red,
+                  height: 125,
+                  width: 105,
+                  decoration:  BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
                       ],
+                      color: Colors.white
+                  ),
+                  child:  Column(
+                    children: [
+                      SizedBox(height: 3,),
+                      Image.asset("images/audi.png",height: 60,width: 80,),
+                      SizedBox(height: 15,),
+                      Text('AUDI',textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),),
+                      SizedBox(height: 7,),
+                    ],
 
-                    ),
-                  ),),
-              ],
-            ),
+                  ),
+                ),),
+            ],
           ),
           SizedBox(height: 10,),
           Container(

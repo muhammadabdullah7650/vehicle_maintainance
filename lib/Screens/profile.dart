@@ -63,7 +63,7 @@ class profile extends StatelessWidget {
                Icon(Icons.admin_panel_settings,size: 50,color: Colors.amber,),
                SizedBox(height: 20,),
                //Image.asset("images/wash.png",height: 80,width: 80,),
-               Text('Login/Signup',textAlign: TextAlign.center,
+               Text('Admin Login',textAlign: TextAlign.center,
                  style: TextStyle(
                    color: Colors.black,
                    fontSize: 16,
